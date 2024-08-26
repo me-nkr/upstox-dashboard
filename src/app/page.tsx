@@ -10,7 +10,8 @@ const Home: NextPage  = () => {
         query={new Map([
           ["client_id", process.env.UPSTOX_AUTH_CLIENT_ID],
           ["redirect_uri", process.env.UPSTOX_AUTH_REDIRECT_URL],
-          ["response type", "code"]
+          ["response type", "code"],
+          ["state", "samplesecurestate"]
         ])}
       />
     </main>
